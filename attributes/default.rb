@@ -2,7 +2,7 @@
 # Cookbook Name:: yasm
 # Attributes:: default
 #
-# Copyright 2012, Escape Studios
+# Copyright 2012-2013, Escape Studios
 #
 
 default[:yasm][:install_method] = :package

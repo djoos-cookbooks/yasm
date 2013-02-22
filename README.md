@@ -16,11 +16,13 @@ Requirements
 
 ## Platforms:
 
-* Ubuntu
 * Debian
-* RHEL
+* Ubuntu
 * CentOS
+* RHEL
 * Fedora
+* Scientific
+* Amazon
 
 Attributes
 ==========
@@ -36,8 +38,8 @@ Usage
 
 1) include `recipe[yasm]` in a run list
 2) tweak the attributes via attributes/default.rb
-	--- OR ---
-	override the attribute on a higher level (http://wiki.opscode.com/display/chef/Attributes#Attributes-AttributesPrecedence)
+    --- OR ---
+    override the attribute on a higher level (http://wiki.opscode.com/display/chef/Attributes#Attributes-AttributesPrecedence)
 
 References
 ==========
@@ -49,7 +51,7 @@ License and Authors
 
 Author: David Joos <david@escapestudios.com>
 Author: Escape Studios Development <dev@escapestudios.com>
-Copyright: 2012, Escape Studios
+Copyright: 2012-2013, Escape Studios
 
 Unless otherwise noted, all files are released under the MIT license,
 possible exceptions will contain licensing information in them.
