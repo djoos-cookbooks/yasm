@@ -36,7 +36,7 @@ template "#{Chef::Config[:file_cache_path]}/yasm-compiled_with_flags" do
     variables(
         :compile_flags => node[:yasm][:compile_flags]
     )
-    notifies :delete, "file[#{creates_yasm}]", :immediately
+    notifies :delete, resources(:file => creates_yasm), :immediately
 end
 
 bash "compile_yasm" do
