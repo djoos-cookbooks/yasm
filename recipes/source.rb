@@ -20,7 +20,7 @@ file creates_yasm do
   action :nothing
 end
 
-git "#{Chef::Config[:file_cache_path]}/yasm" do
+git node['yasm']['build_dir'] do
   repository node['yasm']['git_repository']
   reference node['yasm']['git_revision']
   action :sync
@@ -28,7 +28,7 @@ git "#{Chef::Config[:file_cache_path]}/yasm" do
 end
 
 # write the flags used to compile to disk
-template "#{Chef::Config[:file_cache_path]}/yasm-compiled_with_flags" do
+template "#{node['yasm']['build_dir']}/yasm-compiled_with_flags" do
   source 'compiled_with_flags.erb'
   owner 'root'
   group 'root'
@@ -40,7 +40,7 @@ template "#{Chef::Config[:file_cache_path]}/yasm-compiled_with_flags" do
 end
 
 bash 'compile_yasm' do
-  cwd "#{Chef::Config[:file_cache_path]}/yasm"
+  cwd node['yasm']['build_dir']
   code <<-EOH
     autoreconf
     automake --add-missing
