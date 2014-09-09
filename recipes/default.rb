@@ -6,8 +6,8 @@
 #
 
 case node['yasm']['install_method']
-when 'source'
+when :source
   include_recipe 'yasm::source'
-when 'package'
+when :package
   include_recipe 'yasm::package'
 end
