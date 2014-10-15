@@ -15,6 +15,8 @@ module YASM
     # package names returned are determined by the platform running this recipe.
     def yasm_packages
       value_for_platform(
+        ['fedora'] => { 'default' => ['yasm'] },
+        'default' => ['yasm'],
         ['ubuntu'] => { 'default' => ['yasm'] },
         'default' => ['yasm']
       )
