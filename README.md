@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/escapestudios-cookbooks/yasm.png)](https://travis-ci.org/escapestudios-cookbooks/yasm)
+
 Description
 ===========
 
