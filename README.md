@@ -29,7 +29,7 @@ Requirements
 Attributes
 ==========
 
-* `node['yasm']['install_method']` - Installation method, ':source' or ':package' - default ':source'
+* `node['yasm']['install_method']` - Installation method, ':source' or ':package' - default ':package'
 * `node['yasm']['prefix']` - Location prefix of where the installation files will go if installing via ':source'
 * `node['yasm']['git_repository']` - Location of the source git repository
 * `node['yasm']['git_revision']` - Revision of the git repository to install
