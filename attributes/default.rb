@@ -10,3 +10,5 @@ default['yasm']['prefix'] = '/usr'
 default['yasm']['git_repository'] = 'git://github.com/yasm/yasm.git'
 default['yasm']['git_revision'] = 'HEAD'
 default['yasm']['compile_flags'] = []
+
+default['yasm']['build_dir'] = "#{Chef::Config[:file_cache_path]}/yasm"
