@@ -2,7 +2,7 @@
 # Cookbook Name:: yasm
 # Recipe:: default
 #
-# Copyright 2012-2014, Escape Studios
+# Copyright (c) 2016, David Joos
 #
 
 case node['yasm']['install_method']

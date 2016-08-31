@@ -1,22 +1,22 @@
-[![Build Status](https://travis-ci.org/escapestudios-cookbooks/yasm.png)](https://travis-ci.org/escapestudios-cookbooks/yasm)
+[![Build Status](https://travis-ci.org/djoos-cookbooks/yasm.png)](https://travis-ci.org/djoos-cookbooks/yasm)
 
-Description
-===========
+# yasm cookbook
+
+## Description
 
 This cookbook provides an easy way to install the Yasm Assembler.
 
 More information?
 http://yasm.tortall.net/
 
-Requirements
-============
+## Requirements
 
-## Cookbooks:
+### Cookbooks:
 
 * build-essential
 * git
 
-## Platforms:
+### Platforms:
 
 * Debian
 * Ubuntu
@@ -26,8 +26,7 @@ Requirements
 * Scientific
 * Amazon
 
-Attributes
-==========
+## Attributes
 
 * `node['yasm']['install_method']` - Installation method, ':source' or ':package' - default ':package'
 * `node['yasm']['prefix']` - Location prefix of where the installation files will go if installing via ':source'
@@ -35,25 +34,25 @@ Attributes
 * `node['yasm']['git_revision']` - Revision of the git repository to install
 * `node['yasm']['compile_flags']` - Array of flags to use in compilation process
 
-Usage
-=====
+## Usage
 
 1) include `recipe[yasm]` in a run list
 2) tweak the attributes via attributes/default.rb
-    --- OR ---
-    override the attribute on a higher level (http://wiki.opscode.com/display/chef/Attributes#Attributes-AttributesPrecedence)
+--- OR ---
+[override the attribute on a higher level](http://wiki.opscode.com/display/chef/Attributes#Attributes-AttributesPrecedence)
 
-References
-==========
+## References
 
-* [Yasm home page] (http://yasm.tortall.net/)
+* [Yasm home page](http://yasm.tortall.net/)
 
-License and Authors
-===================
+## License and Authors
+
+Author: David Joos <development@davidjoos.com>
+Copyright: 2016, David Joos
 
 Author: David Joos <david.joos@escapestudios.com>
 Author: Escape Studios Development <dev@escapestudios.com>
-Copyright: 2012-2014, Escape Studios
+Copyright: 2012-2015, Escape Studios
 
 Unless otherwise noted, all files are released under the MIT license,
 possible exceptions will contain licensing information in them.
