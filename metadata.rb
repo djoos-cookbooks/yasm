@@ -3,7 +3,7 @@ maintainer 'David Joos'
 maintainer_email 'development@davidjoos.com'
 license 'MIT'
 description 'Installs/Configures Yasm'
-version '1.1.1'
+version '1.2.0'
 
 %w(debian ubuntu centos redhat fedora scientific amazon).each do |os|
   supports os
