@@ -12,5 +12,5 @@ end
 depends 'build-essential'
 depends 'git'
 
-source_url 'https://github.com/djoos-cookbooks/yasm'
-issues_url 'https://github.com/djoos-cookbooks/yasm/issues'
+source_url 'https://github.com/djoos-cookbooks/yasm' if respond_to?(:source_url)
+issues_url 'https://github.com/djoos-cookbooks/yasm/issues' if respond_to?(:issues_url)
