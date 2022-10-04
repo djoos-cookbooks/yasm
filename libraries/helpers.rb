@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: yasm
+# Cookbook:: yasm
 # Library:: helpers
 #
-# Copyright (c) 2016, David Joos
+# Copyright:: (c) 2016, David Joos
 #
 
 # The YASM module name-spaces all the classes of the YASM-cookbook

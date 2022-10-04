@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: yasm
+# Cookbook:: yasm
 # Recipe:: package
 #
-# Copyright (c) 2016, David Joos
+# Copyright:: (c) 2016, David Joos
 #
 
 yasm_packages.each do |pkg|

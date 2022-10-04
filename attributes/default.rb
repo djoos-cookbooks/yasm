@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: yasm
+# Cookbook:: yasm
 # Attributes:: default
 #
-# Copyright (c) 2016, David Joos
+# Copyright:: (c) 2016, David Joos
 #
 
 default['yasm']['install_method'] = 'package'

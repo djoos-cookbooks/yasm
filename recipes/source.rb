@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: yasm
+# Cookbook:: yasm
 # Recipe:: source
 #
-# Copyright (c) 2016, David Joos
+# Copyright:: (c) 2016, David Joos
 #
 
 include_recipe 'build-essential'
@@ -32,9 +32,9 @@ template "#{Chef::Config[:file_cache_path]}/yasm-compiled_with_flags" do
   source 'compiled_with_flags.erb'
   owner 'root'
   group 'root'
-  mode 0600
+  mode '600'
   variables(
-    :compile_flags => node['yasm']['compile_flags']
+    compile_flags: node['yasm']['compile_flags']
   )
   notifies :delete, "file[#{creates_yasm}]", :immediately
 end

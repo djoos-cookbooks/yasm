@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: yasm
+# Cookbook:: yasm
 # Recipe:: default
 #
-# Copyright (c) 2016, David Joos
+# Copyright:: (c) 2016, David Joos
 #
 
 case node['yasm']['install_method'].to_s
